@@ -616,7 +616,7 @@ void ANFUN(void)
 
     puts("You step into Room 12.");
     puts("The air is cold to cold");
-    printf("Somewhere in the dark, something whispers your name);
+    printf("Somewhere in the dark, something whispers %s.\n", whispers[randomEvent]);
 
     while (1)
     {
