@@ -709,7 +709,6 @@ void ANFUN(void)
         }
     }
 }
-}
 void dleyva14(void)
 {
 	printf("DL\n");
