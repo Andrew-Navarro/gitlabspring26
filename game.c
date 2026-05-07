@@ -4,7 +4,7 @@
 //Ryan Rodriguez
 //
 void ANFUN(void);
-
+void hauntedRoom(void);
 
 #include <stdlib.h>
 #include <ctype.h>
@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
 			case 12:
 			{
 				ANFUN();
-				puts("room12");
+				hauntedRoom();
 				break;
 			}
 			case 13:
@@ -604,6 +604,111 @@ void printInitialsSMarkos(void)
 void ANFUN(void)
 {
     printf("AN");
+}
+    void hauntedRoom(void)
+{
+    int choice;
+    int secondChoice;
+    int randomEvent;
+    char *whispers[3] = {"your name", "your childhood home", "a voice that sounds like you"};
+
+    randomEvent = rand() % 3;
+
+    puts("You step into Room 12.");
+    puts("The air is cold to cold");
+    printf("Somewhere in the dark, something whispers your name);
+
+    while (1)
+    {
+        puts("\nWhat do you do?");
+        puts("1. Walk deeper into the room");
+        puts("2. Hide behind the broken table");
+        puts("3. Run back to the main room");
+        printf("Choice: ");
+        scanf("%d", &choice);
+
+        if (choice == 1)
+        {
+            puts("\nYou walk deeper into the room.");
+            puts("The floor creaks with each step, but the sound of your steps comes late");
+            puts("On the wall, you see old scratch marks. Some are fresh and some seemed to be there for many years.");
+            puts("One mark looks like your name.");
+
+            puts("\nA narrow hallway opens where there was only a wall before.");
+            puts("1. Follow the hallway");
+            puts("2. Touch the writing on the wall");
+            printf("Choice: ");
+            scanf("%d", &secondChoice);
+
+            if (secondChoice == 1)
+            {
+                puts("\nYou follow the hallway until the door behind you disappears.");
+                puts("Your shadow on the wall even after you moved far away.");
+                puts("The room does not take you all at once.");
+                puts("It waits until you are tired.");
+                puts("By the time you understand, your breathing has become part of the walls when you breath the walls expands and shrinks.");
+                puts("Ending: you know in a endless hall of hall only earing other people in different halls.");
+            }
+            else
+            {
+                puts("\nYou touch the writing.");
+                puts("The letters move under your fingers.");
+                puts("You try to pull away, but the wall feels warm, almost alive.");
+                puts("Your hand sinks in first, then your arm.");
+                puts("Then the rest of you know you are part of the wall.");
+                puts("Ending: now you only watch for each new person entering the room.");
+            }
+
+            break;
+        }
+        else if (choice == 2)
+        {
+            puts("\nYou hide behind the broken table.");
+            puts("Dust rises around you, but it smells like old paper and rain.");
+            puts("You hear footsteps enter the room.");
+            puts("They stop exactly where you were standing.");
+
+            puts("\nA voice whispers, 'Do you remember why you came here?'");
+            puts("1. Say your name out loud");
+            puts("2. Stay silent");
+            printf("Choice: ");
+            scanf("%d", &secondChoice);
+
+            if (secondChoice == 1)
+            {
+                puts("\nYou say your name, but it sounds wrong.");
+                puts("The voice repeats it back.");
+                puts("By the fifth time, you don't understand why the its sayign that name you don't know that name ");
+                puts("You remember fear. You remember the room.");
+                puts("But you do not remember yourself.");
+                puts("Ending: The room remembers your name better than you do.");
+            }
+            else
+            {
+                puts("\nYou stay silent.");
+                puts("The room grows patient.");
+                puts("Minutes pass, or maybe years its hard to tell.");
+                puts("When you finally stand, the door is open, but you cannot remember what doors are for.");
+                puts("You sit back down behind the table and wait.");
+                puts("Ending: You become another forgotten thing in Room.");
+            }
+
+            break;
+        }
+        else if (choice == 3)
+        {
+            puts("\nYou grab the door handle and pull.");
+            puts("For a moment, something pulls back.");
+            puts("Then the door opens, and you stumble into the main room.");
+            puts("Room 12 closes quietly behind you.");
+            break;
+        }
+        else
+        {
+            puts("The room does not understand that choice.");
+        }
+    }
+}
 }
 void dleyva14(void)
 {
