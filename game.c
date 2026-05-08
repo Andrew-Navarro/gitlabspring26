@@ -3,8 +3,6 @@
 //LS
 //Ryan Rodriguez
 //
-void ANFUN(void);
-void hauntedRoom(void);
 
 #include <stdlib.h>
 #include <ctype.h>
@@ -40,6 +38,8 @@ void printInitialsSMarkos(void);
 void brooklynstitt(void);
 void PogoAM(void);
 void dleyva14(void);
+void ANFUN(void);
+void hauntedRoom(void);
 
 int main(int argc, char *argv[])
 {
