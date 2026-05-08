@@ -605,7 +605,7 @@ void ANFUN(void)
 {
     printf("AN");
 }
-    void hauntedRoom(void)
+void hauntedRoom(void)
 {
     int choice;
     int secondChoice;
